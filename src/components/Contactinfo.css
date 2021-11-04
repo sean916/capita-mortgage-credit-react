@@ -1,0 +1,19 @@
+.copyright {
+    font-size: 0.9em;
+  }
+
+.copyright-space {
+    height: 100vh;
+}
+
+@media only screen and (max-width: 450px) {
+  div.copyright {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  div.copyright {
+    font-size: 0.4em;
+  }
+}

@@ -1,0 +1,39 @@
+.form-group {
+    margin: 20px 5% 10px 5%;
+  }
+
+  input[type="text"] {
+      width: 90%;
+  }
+  input[type="email"] {
+      width: 90%;
+  }
+
+  input[type="radio"] {
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Chrome, Safari, Opera */
+    transform: scale(1.3);
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  .button {
+    margin: 20px 5% 20px 5%;
+    padding: 15px;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: gainsboro;
+    border-radius: 10px;
+    border-style: none;
+    background-color:rgb(83, 125, 177);
+    
+  }
+  .button:hover {
+    color:rgba(255, 166, 0, 0.884);
+    background-color:rgba(83, 125, 177, 0.6);
+  }
+
+  p {
+      
+    margin: 0px 5% 0px 5%;
+  }

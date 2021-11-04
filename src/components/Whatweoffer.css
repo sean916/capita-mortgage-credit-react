@@ -1,0 +1,21 @@
+.offer-list {
+    margin-bottom: 20px;
+  }
+  .offer-list ul {
+    column-count: 2;
+  }
+  .offer-list ul li {
+    margin: 5px 10px 5px 10px;
+    justify-content: space-between;
+
+  }
+
+  @media only screen and (max-width: 575px) {
+    .offer-list ul {
+      column-count: 1;
+    }
+
+    .offer-list ul li {
+      margin: 12px 10px 0px 10px;
+    }
+  }
