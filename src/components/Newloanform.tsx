@@ -174,7 +174,7 @@ const Newloanform = () => {
         return (
             <div id="new-loan-form" className="center-head">
                 <form id="loan-form" onSubmit={handleSubmit}>
-                    <div className="center-head"><h2>New Loan Form</h2></div>
+                    <div className="center-head"><h2>New Loan Prequal Form</h2></div>
 
                     <div className="center-head noscript-container">
                         <noscript>

@@ -17,6 +17,10 @@ function App() {
   const [showMap, setShowMap] = useState<IState["showMap"]>(false);
   const [showSpace, setShowSpace] = useState<IState["showSpace"]>(false);
 
+  const handleApplicationNavClick = () => {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSeP9fSd3rdL4w-z9nSUWnIYU9ZbjqGYiyoqrYViL_j-NEYZBw/viewform?usp=sf_link", '_blank');
+  }
+
   const handleContactNavClick = () => {
     setShowSpace(true);
   }
@@ -41,7 +45,8 @@ function App() {
       <div className="nav-bar">
         <ul>
           <li id='where-we-lend-nav' onClick={handleWhereWeLendNavClick}><a href="#where-we-lend">Where We Lend</a></li>
-          <li><a href="#new-loan-form">New Loan Form</a></li>
+          <li><a href="#new-loan-form">Prequal Form</a></li>
+          <li onClick={handleApplicationNavClick}><a>Application</a></li>
           <li id='contact-us-nav' onClick={handleContactNavClick}><a href="#contact-us">Contact Us</a></li>
         </ul>
       </div>
