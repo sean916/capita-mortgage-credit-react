@@ -32,7 +32,7 @@ const Contactinfo: React.FC<IProps> = (props: IProps) => {
             </div>
             <br></br>
             <div className="center-head copyright" id='copyright-div'>
-                <p>Copyright 2021. Capita Mortgage Credit {'\u00A0'} | {'\u00A0'} Bureau of Real Estate #01824199 </p>
+                <span>Copyright 2021. Capita Mortgage Credit {'\u00A0'} | {'\u00A0'} Bureau of Real Estate #01824199 </span>
             </div>
             <br></br>
         </div>

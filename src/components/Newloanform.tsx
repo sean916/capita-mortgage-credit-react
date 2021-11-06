@@ -205,7 +205,8 @@ const Newloanform = () => {
                     <br></br>
 
                     <div id='form-owner-occ-or-invest' className="form-group">
-                        <p>Is this property Owner Occupied or is it an Investment Property?</p>
+                        <span>Is this property Owner Occupied or is it an Investment Property?</span>
+                        <br></br>
                         <input name='entry.912044038' onChange={handleOwnOccChange} type='radio' id='owner-occupied' value='Owner Occupied'></input>
                         <label htmlFor='owner-occupied'>Owner Occupied</label>
                         <br></br>
@@ -232,7 +233,7 @@ const Newloanform = () => {
                     <br></br>
 
                     <div id='form-purchase-or-refi' className="form-group">
-                        <p>Is this a Purchase or a Refinance?</p>
+                        <span>Is this a Purchase or a Refinance?</span>
                         <div id='purchase-div'>
                             <input name='entry.2108130954' onChange={handlePurchaseChange} required type='radio' id="Purchase" value='Purchase'></input>
                             <label htmlFor='Purchase'>Purchase</label>
@@ -313,7 +314,8 @@ const Newloanform = () => {
                     <br></br>
 
                     <div id='form-owner-occ-or-invest' className="form-group">
-                        <p>Is this property Owner Occupied or is it an Investment Property?</p>
+                    <span>Is this property Owner Occupied or is it an Investment Property?</span>
+                    <br></br>
                         <input name='entry.912044038' onChange={handleOwnOccChange} type='radio' id='owner-occupied' value='Owner Occupied'></input>
                         <label htmlFor='owner-occupied'>Owner Occupied</label>
                         <br></br>
@@ -340,7 +342,7 @@ const Newloanform = () => {
                     <br></br>
 
                     <div id='form-purchase-or-refi' className="form-group">
-                        <p>Is this a Purchase or a Refinance?</p>
+                        <span>Is this a Purchase or a Refinance?</span>
                         <div id='purchase-div'>
                             <input name='entry.2108130954' onChange={handlePurchaseChange} required type='radio' id="Purchase" value='Purchase'></input>
                             <label htmlFor='Purchase'>Purchase</label>
@@ -439,7 +441,8 @@ const Newloanform = () => {
                     <br></br>
 
                     <div id='form-owner-occ-or-invest' className="form-group">
-                        <p>Is this property Owner Occupied or is it an Investment Property?</p>
+                    <span>Is this property Owner Occupied or is it an Investment Property?</span>
+                    <br></br>
                         <input name='entry.912044038' onChange={handleOwnOccChange} type='radio' id='owner-occupied' value='Owner Occupied'></input>
                         <label htmlFor='owner-occupied'>Owner Occupied</label>
                         <br></br>
@@ -466,7 +469,7 @@ const Newloanform = () => {
                     <br></br>
 
                     <div id='form-purchase-or-refi' className="form-group">
-                        <p>Is this a Purchase or a Refinance?</p>
+                        <span>Is this a Purchase or a Refinance?</span>
                         <div id='purchase-div'>
                             <input name='entry.2108130954' onChange={handlePurchaseChange} required type='radio' id="Purchase" value='Purchase'></input>
                             <label htmlFor='Purchase'>Purchase</label>
