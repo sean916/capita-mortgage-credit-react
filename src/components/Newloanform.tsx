@@ -46,61 +46,80 @@ const Newloanform = () => {
 
     const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setName(e.target.value);
+        setTempMessage(false);
     }
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
+        setTempMessage(false);
+        
     }
     const handlePhoneNumChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setPhoneNum(e.target.value);
+        setTempMessage(false);
     }
     const handlePropAddressChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setPropAddress(e.target.value);
+        setTempMessage(false);
     }
     const handleCloseDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCloseDate(e.target.value);
+        setTempMessage(false);
     }
     const handlePurchasePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setPurchasePrice(e.target.value);
+        setTempMessage(false);
     }
     const handleDownPaymentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setDownPayment(e.target.value);
+        setTempMessage(false);
     }
     const handleEstimatedRehabChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEstimatedRehab(e.target.value);
+        setTempMessage(false);
     }
     const handleEstimatedARVChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEstimatedARV(e.target.value);
+        setTempMessage(false);
     }
     const handlePurchaseTimeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setPurchaseTime(e.target.value);
+        setTempMessage(false);
     }
     const handleFlippingExpChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFlippingExp(e.target.value);
+        setTempMessage(false);
     }
     const handleEstimatedValueChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEstimatedValue(e.target.value);
+        setTempMessage(false);
     }
     const handleRefiTimeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setRefiTime(e.target.value);
+        setTempMessage(false);
     }
     const handleExitStratChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setExitStrat(e.target.value);
+        setTempMessage(false);
     }
     const handleOwnOccChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setOwnerOccOrInv('Owner Occupied');
+        setTempMessage(false);
     }
     const handleInvChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setOwnerOccOrInv('Investment Property');
+        setTempMessage(false);
     }
 
     const handlePurchaseChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setRefiOrPurch(e.target.value);
         setActiveFormGroup(e.target.value)
+        setTempMessage(false);
     }
 
     const handleRefiChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setRefiOrPurch(e.target.value);
         setActiveFormGroup(e.target.value)
+        setTempMessage(false);
     }
 
     const resetFields = () => {
@@ -262,6 +281,7 @@ const Newloanform = () => {
                         <label htmlFor='exit-strat'>What is your exit strategy?</label>
                         <br></br>
                         <input name='entry.1966155536' value={exitStrat} onChange={handleExitStratChange} id='exit-strat' type='text' ></input>
+                       
                     </div>
 
                     <div className="center-head noscript-container">
@@ -273,9 +293,9 @@ const Newloanform = () => {
                             <br></br>
                         </noscript>
                     </div>
-
-                    <input className='button' id='submit-btn' type='submit'></input>
-                    { tempMessage == false ? <p></p> : <p>Thank you for submitting, we will get back to you shortly.</p> }
+                    
+                    { tempMessage == false ? <div><input className='button' id='submit-btn' type='submit'></input></div> : <p>Thank you for submitting, we will get back to you shortly.</p> }
+                    
                 </form>
             </div>
         )
@@ -389,6 +409,7 @@ const Newloanform = () => {
                         <label htmlFor='flipping-exp'>What is your flipping experience?</label>
                         <br></br>
                         <input name='entry.573836672' value={flippingExp} onChange={handleFlippingExpChange} id='flipping-exp' type='text' ></input>
+                        <br></br>
                     </div>
 
                     <div className="center-head noscript-container">
@@ -400,9 +421,9 @@ const Newloanform = () => {
                             <br></br>
                         </noscript>
                     </div>
-
-                    <input className='button' id='submit-btn' type='submit'></input>
-                    { tempMessage == false ? <p></p> : <p>Thank you for submitting, we will get back to you shortly.</p> }
+                    
+                    { tempMessage == false ? <div><input className='button' id='submit-btn' type='submit'></input></div> : <p>Thank you for submitting, we will get back to you shortly.</p> }
+                    
                 </form>
             </div>
         )
@@ -481,8 +502,9 @@ const Newloanform = () => {
                         </div>
                     </div>
                     <br></br>
-                    <input className='button' id='submit-btn' type='submit'></input>
-                    { tempMessage == false ? <p></p> : <p>Thank you for submitting, we will get back to you shortly.</p> }
+                    
+                    { tempMessage == false ? <div><input className='button' id='submit-btn' type='submit'></input></div> : <p>Thank you for submitting, we will get back to you shortly.</p> }
+                    
                 </form>
             </div>
         )
