@@ -183,7 +183,7 @@ const Newloanform = () => {
                 body
             });
         } finally {
-            
+            resetFields();
             setTempMessage(true)
         }
             
