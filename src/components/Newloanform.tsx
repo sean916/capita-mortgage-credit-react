@@ -123,14 +123,14 @@ const Newloanform = () => {
     }
 
     const resetFields = () => {
-        setActiveFormGroup('')
+        // setActiveFormGroup('')
         setName('')
         setEmail('')
         setPhoneNum('')
-        setOwnerOccOrInv('')
+        // setOwnerOccOrInv('')
         setPropAddress('')
         setCloseDate('')
-        setRefiOrPurch('')
+        // setRefiOrPurch('')
         setPurchasePrice('')
         setDownPayment('')
         setEstimatedRehab('')
